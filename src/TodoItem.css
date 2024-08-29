@@ -1,0 +1,94 @@
+/* .task {
+    display: flex;
+    flex-flow: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 5vh;
+    width: 30vw;
+
+    font-size: 1em;
+
+    box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.35);
+    border: 0.15rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+
+    overflow-wrap: anywhere;
+} */
+
+.task > p {
+    width: 60%;
+}
+
+.task > input {
+    width: 60%;
+}
+
+.buttonDiv {
+    width: 40%;
+}
+
+.buttonDiv > button {
+    width: 50%;
+}
+
+.taskGrid {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+
+    align-items: start;
+    align-content: stretch;
+    justify-items: start;
+    justify-content: stretch;
+
+    row-gap: 10px;
+    padding: repeat(4, 10px);
+
+    min-height: 5vh;
+    width: 30vw;
+
+    box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.35);
+    border: 0.15rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.taskGrid > div {
+    width: 100%;
+    height: 100%;
+}
+
+.taskTitle {
+    grid-column: 1/4;
+    grid-row: 1;
+
+    font-style: bold;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0px 0px 0px 0px;
+}
+
+.taskPriority {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.taskDueDate {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.taskStatus {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.taskTags {
+    grid-column: 1/4;
+    grid-row: 3;
+}

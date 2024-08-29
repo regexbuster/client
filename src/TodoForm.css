@@ -1,0 +1,20 @@
+.formInput {
+    display: flex;
+    flex-flow: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    height: 5vh;
+    width: 30vw;
+
+    font-size: 3.5vh;
+}
+
+.formInput > input {
+    width: 75%;
+}
+
+.formInput > button {
+    width: 25%;
+}
